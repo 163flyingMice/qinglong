@@ -2,5 +2,8 @@ FROM docker.m.daocloud.io/whyour/qinglong:latest
 ENV QlPort=80
 ENV TZ=Asia/Shanghai
 ENV QlBaseUrl=/
-ENV ENCRYPTION\_SECRET=QingLong@2026RandomSecret123456
+# JWT固定加密密钥，全程固定，切勿修改！
+ENV ENCRYPTION\_SECRET=QingLong@2026CloudBaseQL123456789abc
+# 解决HTTPS反向代理鉴权循环（关键新增）
+ENV QL\_HTTPS\_REVERSE=true
 EXPOSE 80
