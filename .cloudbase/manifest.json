@@ -8,9 +8,5 @@
       "maxNum": 1,
       "containerPort": 80
     }
-  },
-  "build": {
-    "context": ".",
-    "dockerfilePath": "Dockerfile"
   }
 }
