@@ -1,0 +1,12 @@
+{
+  "name": "qinglong",
+  "plugins": {
+    "container": {
+      "cpu": 0.5,
+      "mem": 1,
+      "minNum": 1,
+      "maxNum": 1,
+      "containerPort": 80
+    }
+  }
+}
